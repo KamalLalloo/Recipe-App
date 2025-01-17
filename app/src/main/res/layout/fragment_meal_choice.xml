@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MealChoiceFragment"
+    android:background="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="304dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="36dp"
+            android:text="Choose a meal to add!"
+            android:textAlignment="center"
+            android:textColor="#2E7D32"
+            android:textColorHighlight="#2E7D32"
+            android:textColorLink="#2E7D32"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Choose a date!"
+            android:textColor="#2E7D32"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/r_name" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="322dp"
+            android:layout_height="302dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.395"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupMeal"
+            android:layout_width="389dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="36dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView">
+
+            <RadioButton
+                android:id="@+id/radioButtonBreakfast"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:text="Breakfast" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLunch"
+                android:layout_width="116dp"
+                android:layout_height="match_parent"
+                android:text="Lunch" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDinner"
+                android:layout_width="99dp"
+                android:layout_height="44dp"
+                android:text="Dinner" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/add_meal"
+            android:layout_width="218dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="32dp"
+            android:text="Add to meal plan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupMeal" />
+
+        <TextView
+            android:id="@+id/r_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Recipe name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+

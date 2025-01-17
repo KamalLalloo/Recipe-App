@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Plan &amp; Plate</string>
+    <string-array name="units_array">
+        <item></item>
+        <item>kg</item>
+        <item>g</item>
+        <item>tsp</item>
+        <item>tblspn</item>
+        <item>ml</item>
+        <item>l</item>
+        <item>cup</item>
+        <item>oz</item>
+        <!-- Add more units as needed -->
+    </string-array>
+</resources>

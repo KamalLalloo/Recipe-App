@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_meal_adder"
+        android:icon="@drawable/ic_add"
+        android:title="Meal Adder"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_grocery"
+        android:icon="@drawable/ic_grocery"
+        android:title="Grocery"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_community"
+        android:icon="@drawable/ic_community"
+        android:title="Community"
+        app:showAsAction="ifRoom"/>
+</menu>
